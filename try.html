@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Short Stack", cursive;
+        }
+      .colors-1{
+        background-color: pink;
+        border-radius: 40px;
+          border: 5px solid #182420;
+      }
+      .colors-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #7be8e8;
+        border-radius: 40px;
+          border: 5px solid #182420;
+      }
+      .colors-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(194, 218, 114);
+        border-radius: 40px;
+          border: 5px solid #013927;
+      }
+      .colors-4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(213, 171, 247); 
+        border-radius: 40px;
+          border: 5px solid #182420;
+      }
+      .colors-5{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #031407; 
+        border-radius: 40px;
+        border: 5px solid #182420;
+        ;
+          
+      }
+  
+        h1
+        {
+          margin-top: 50px;
+          letter-spacing: 3px;
+          font-weight: bold;
+          color: black;
+          margin-bottom: 57px;
+        }
+  
+        .date-input {
+          padding: 20px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+  
+        input {
+          max-width: 150px;
+          padding: 10px;
+          outline: none;
+          text-align: center;
+          font-size: 20px;
+          border-radius: 40px;
+          border: 5px solid #182420;
+          color: black;
+        }
+  
+        input:hover {
+          background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+        }
+  
+        .actionBtns {
+          padding: 10px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+  
+        .findOut, .findOut-2, .findOut-3{
+            max-width: 150px;
+            padding: 18px;
+            outline: none;
+            text-align: center;
+            font-size: 26px;
+            border-radius: 41px;
+            border: 4px solid #182420;
+            color: black;
+            background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+            
+        }
+          .findOut:hover, .findOut-2:hover, .findOut-3:hover {
+          background: rgb(241, 150, 255);
+        }
+        
+      
+        
+
+        .heading-challenge-1{
+          align-items: center;
+          display: flex;
+          justify-content: space-around;
+        }
+        .flex-box-container-2{
+          display: flex;
+          flex-wrap: wrap;
+          padding: 10px;
+        }
+        .flex-box-container-2 img{
+          margin: 10px;
+          justify-content: space-around;
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 1);
+        }
+        .flex-box-rps img:hover{
+          box-shadow: 0px 10px 50px rgb(32, 118, 239);
+        }
+
+
+        .container-rps{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .container-rps .section{
+            width: 350px;
+            margin: 20px 50px;
+        }
+        .section .info{
+            background: rgb(10, 10, 10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            border-radius: 33px;
+            margin: 26px;
+        }
+        .info span , .info h3{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0px 10px;
+            font-family: sans-serif;
+            color: white;
+        }
+        .show{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background : rgb(41, 40, 40);
+            height: 220px;
+            
+        }
+        .show i{
+        font-size: 100px;
+            color: orange;
+            margin-top: 45px;
+          
+        }
+        h2{
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .selection{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 116px;
+          
+        }
+        .selection button{
+            margin: 0 20px;
+            padding: 25px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background : rgb(41, 40, 40);
+            font-size: 33px;
+            color: orange;
+        }
+
+        header {
+          background:#720b2d;
+          width:100%;
+          padding: 2px 0;
+          color:white;
+          text-align:center;
+        }
+
+        a {
+          text-decoration:none;
+          color:inherit;
+        }
+
+        nav ul {
+          background-color:#2a0b1d;
+          overflow:hidden;
+          color:white;
+          padding:0;
+          margin:0;
+          text-align:center;
+          -webkit-transition:max-height 0.4s;
+          -ms-transition:max-height 0.4s;
+          -moz-transition:max-height 0.4s;
+          -o-transition:max-height 0.4s;
+          transition:max-height 0.4s;
+        }
+
+        nav ul li {
+          display:inline-block;
+          padding:20px;
+        }
+
+        nav ul li:hover {
+          background-color:#d9ebd1;
+        }
+
+        section {
+          line-height: 1.5em;
+          font-size:0.9em;
+          padding:40px;
+          width:75%;
+          margin:0 auto;
+        }
+
+          .handle {
+            width:100%;
+            background: #2a0b1d;
+            text-align:left;
+            box-sizing:border-box;
+            padding:15px 10px;
+            cursor:pointer;
+            color:white;
+            display:none;
+          }
+
+
+
+
+        @media (max-width: 320px),(max-width: 375px),(max-width: 425px),(max-width: 768px)
+        {
+
+            .h1-div-1{
+                margin: 9px;
+                margin-left: 15px;
+            }
+
+            input {
+                margin: 70px;
+                margin-top: -30px;
+            }
+            .container-rps{
+               
+                padding: 20px;
+              
+                flex-wrap: wrap;
+                position: inherit;
+                width: 39rem;
+            }
+            .selection button {
+                margin: -3px 5px;
+                padding: 25px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: rgb(41, 40, 40);
+                font-size: 33px;
+                color: orange;
+            }
+            .rps{
+                display: revert;
+            }
+            
+            nav ul {
+                      max-height:0;
+                    }
+                    
+                    .showing {
+                      max-height:20em;
+                    }
+                    nav ul li {
+                      width:100%;
+                      box-sizing:border-box;
+                      padding:15px;
+                      text-align:left;
+                    }
+                    
+                    .handle {
+                      display:block;
+                    }
+        }
+      
+        
+        
+</style>
+
+</head>
+<body>
+  
+
+
+  <header>
+    <h1 style="color: white;">JavaScript programming challenges</h1>
+  </header>
+  <nav>
+      <ul>
+
+        <a href="age#"><li>Age Calculator</li></a>
+        <a href="img#"><li>Image Generator</li></a>
+        <a href="rps#"><li>Rock Paper Scissor</li></a>
+        <a href="black#"><li>Black Jack</li></a>
+        
+      </ul>
+    <div class="handle">Menu</div>
+  </nav>
+  
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------(challenge-1)-Started--------------------------------------------------------->
+          <div class="heading-challenge-1">
+              <div class="h1-div-1">
+                <h1>Challenge 1: Age Calculator in Days....!</h1>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="colors-1">
+                        <center>
+                            <h1> how many days old you are:</h1>
+                            <div class="date-input">
+                              <input id="day" placeholder="Day" />
+                              <input id="month" placeholder="Month" />
+                              <input id="year" placeholder="Year" />
+                            </div>
+                            <div class="actionBtns">
+                              <button class="findOut" onclick="yourAgeInDays()">Find out!</button>
+                            </div>
+      
+                            <div id="calculated">
+                              <h1 id="result"></h1>
+                            </div>
+                            <div>
+                              <p class="millisecondsCount" id="nrms"></p>
+                            </div>
+                        </center>
+                </div>
+              </div>
+            </div>
+        </div>
+   
+      
+<!--------------------------------------------------(challenge-1)-Ended--------------------------------------------------------->
+
+<br>
+<br>
+<br>
+<br>
+<div class="break">
+    <div class="col-lg-12 col-md-12 col-12"  style="background-color: #664936;
+    position: absolute; padding: 4px; flex-wrap: wrap; justify-content: space-around;"></div>
+</div>
+<br>
+<br>
+
+
+<!--------------------------------------------------(challenge-2)-Started--------------------------------------------------------->
+<div class="heading-challenge-1">
+    <h1>Challenge 2: Image Generator....!</h1>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="colors-2">
+                  <center>
+                
+                    <h1> Click on to Generate Image </h1>     
+                      <div class="actionBtns">
+                        <button class="findOut-2" id="img-generator" onclick="generateImg()">Generate Image</button>
+                      </div>
+
+                      <div class="flex-box-container-2" id="flex-gen">
+      
+                    
+
+                      </div>
+                  </center>
+          </div>
+        </div>
+      </div>
+    </div> 
+<!--------------------------------------------------(challenge-2)-Ended--------------------------------------------------------->
+
+<br>
+<br>
+<br>
+<br>
+<div class="break">
+    <div class="col-lg-12 col-md-12 col-12"  style="background-color: #664936;
+    position: absolute; padding: 4px; flex-wrap: wrap; justify-content: space-around;"></div>
+</div>
+<br>
+<br>
+
+<!--------------------------------------------------(challenge-3)-Started--------------------------------------------------------->
+    <div class="heading-challenge-1">
+      <h1>Challenge 3: Rock, Paper, Scissor....!</h1>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="colors-4">
+                    <center>
+                        <div class="rps">
+                      <h1>Rock Paper Scissors</h1>
+                      <h2 id="demo">Try your luck !</h2>
+                  <!--  The Container  -->
+                      <div class="container-rps">
+                  <!--   The first section     -->
+                          <div class="section">
+                              <div class="info">
+                                  <h3>You :</h3><span id="playerScore">0</span>
+                              </div>
+                              <div class="show">
+                                  <i class="fas fa-hand-rock"></i>
+                              </div>
+                          </div>
+                  <!--   The second section     -->
+                          <div class="section" >
+                              <div class="info">
+                                  <h3>Computer :</h3><span id="computerScore">0</span>
+                              </div>
+                              <div class="show computer">
+                                  <i class="fas fa-hand-scissors"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <h2 style="color: rgb(233, 33, 19);" id="demo2">Choose One !</h2>
+                  <!-- This selection div contains the buttons   -->
+                      <div class="selection" onclick="section()">
+                          <button class="fas fa-hand-rock" id="rock"></button>
+                          <button class="fas fa-hand-paper" id="paper"></button>
+                          <button class="fas fa-hand-scissors" id="scissors"></button>
+                      </div>
+                    </div>
+                    </center>
+            </div>
+          </div>
+        </div>
+      </div> 
+<!--------------------------------------------------(challenge-3)-Ended--------------------------------------------------------->
+
+<br>
+<br>
+<br>
+<br>
+<div class="break">
+    <div class="col-lg-12 col-md-12 col-12"  style="background-color: #664936;
+    position: absolute; padding: 4px; flex-wrap: wrap; justify-content: space-around;"></div>
+</div>
+<br>
+<br>
+
+<!--------------------------------------------------(challenge-4)-Started--------------------------------------------------------->
+    <div class="heading-challenge-1">
+      <h1>Challenge 4: Rock, Paper, Scissor....!</h1>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="colors-5">
+                    <center>
+                  
+                      <h1 style="color: white;"> Let's Play Rock        Paper         Scissor  </h1>     
+                     
+                    </center>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--------------------------------------------------(challenge-4)-Ended--------------------------------------------------------->
+</div>
+
+
+    <script>
+          $('.handle').on('click', function(){
+         $('nav ul').toggleClass('showing');
+       });
+
+
+//challenge 2: Image Generator
+
+function generateImg() {
+
+var image = document.createElement('img');
+var div = document.getElementById('flex-gen');
+image.src = "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
+div.appendChild(image);
+
+}
+
+
+
+//chanllenge 3: Rock, Paper, Scissor
+/*
+function rpsGame(yourChoice)
+{
+console.log(yourChoice);
+var humanChoice, boxChoice;
+// humanChoice = yourChoice.id;
+ boxChoice = numberToChoice(randToRpsInt());
+alert(boxChoice);
+//results = decideWinner(humanChoice, boxChoice);  
+//message = finalMessage(results); //('message': 'You won', 'color': green)
+//rpsfrontend(yourChoice.id, boxChoice, message);
+
+} 
+
+function randToRpsInt()
+{
+return Math.floor(Math.random() * 3);
+
+}
+
+function numberToChoice(number)
+{
+return ['rock', 'paper', 'scissor'][number]
+}
+*/
+
+
+
+const ageTwenty = 7300;
+const ageJeanne = 44695;
+function yourAgeInDays() {
+let currentDate = new Date();
+let day = document.querySelector("#day").value;
+let month = document.querySelector("#month").value;
+let year = document.querySelector("#year").value;
+let dateOfBirth = new Date(year + "-" + month + "-" + day);
+let difference = Math.abs(currentDate - dateOfBirth);
+let result = Math.round(difference / (1000 * 3600 * 24));
+if (day === "" || month === "" || year === "") {
+  document.getElementById("result").innerHTML =
+    "Please type your full date of birth.";
+} else if (dateOfBirth > currentDate) {
+  document.getElementById("result").innerHTML = "You're not yet born!?";
+} else if (isNaN(result) || isNaN(day) || isNaN(month) || isNaN(year)) {
+  document.getElementById("result").innerHTML =
+    "Type a proper date";
+} else {
+  if (result < ageTwenty) {
+    let textAnswer =
+      "You are " + result.toString() + " days old";
+    document.getElementById("result").innerHTML = textAnswer;
+  } else if (result >= ageTwenty && result < ageJeanne) {
+    let textAnswer = "You are " + result.toString() + " days old";
+    document.getElementById("result").innerHTML = textAnswer;
+  } else {
+    document.getElementById("result").innerHTML = "Answer is.......";
+    setTimeout(function () {
+      document.getElementById("result").innerHTML =
+        " Answer is.......";
+    }, 1500);
+    setTimeout(function () {
+      document.getElementById("result").innerHTML =
+        "You are " +
+        result.toString() +
+        " days old";
+    }, 2000);
+  }
+}
+}
+
+
+
+
+
+//chanllenge 3: Rock, Paper, Scissor
+// Setting the scores and selecting our HTML elements.
+let computerScore = 1;
+let playerScore = 1;
+const pScore = document.getElementById('playerScore');
+const cScore = document.getElementById('computerScore');
+const buttons = document.querySelectorAll('.selection button');
+const showIcon = document.querySelector('.show i');
+const computerShowIcon = document.querySelector('.computer i');
+// The randomClass array below this contains the rock,paper, and scissor Icon from font-awesome.
+const randomClasses = ["fas fa-hand-rock", "fas fa-hand-paper","fas fa-hand-scissors"];
+const text = document.getElementById('demo');
+const text2 = document.getElementById('demo2');
+
+
+
+// Game Functionality: Setting forEach function for the buttons.
+const game = () =>{
+  buttons.forEach(btn =>{
+      btn.addEventListener('click',(e)=>{
+      // Random rock paper scissor for the computer and the player
+         let clickedBtn = e.target.className;
+         showIcon.className = clickedBtn;
+         let randomNum = Math.floor(Math.random() * randomClasses.length);
+         computerShowIcon.className = randomClasses[randomNum];
+         // Game Score.
+         // If it's a Tie .
+         if(showIcon.className === computerShowIcon.className){
+             pScore.innerHTML = pScore.innerHTML;
+             cScore.innerHTML = cScore.innerHTML;
+             text.innerHTML = "It's a Tie ! ";
+             text.style.color = 'orange';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'orange';
+         } 
+        // if it's not a Tie.
+         else if(showIcon.className === randomClasses[0] && computerShowIcon.className === randomClasses[2]){
+             pScore.innerHTML = playerScore;
+             playerScore++;
+             text.innerHTML = "It's a Win ! ";
+             text.style.color = 'rgb(1, 146, 1)';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'rgb(1, 146, 1)';
+         }else if(showIcon.className === randomClasses[0] && computerShowIcon.className === randomClasses[1]){
+             cScore.innerHTML = computerScore;
+             computerScore++;
+             text.innerHTML = "You Loosed ! ";
+             text.style.color = 'red';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'red';
+         }else if(showIcon.className === randomClasses[1] && computerShowIcon.className === randomClasses[2]){
+             cScore.innerHTML = computerScore;
+             computerScore++;
+             text.innerHTML = "You Loosed ! ";
+             text.style.color = 'red';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'red';
+         }else if(showIcon.className === randomClasses[1] && computerShowIcon.className === randomClasses[0]){
+             pScore.innerHTML = playerScore;
+             playerScore++;
+             text.innerHTML = "It's a Win ! ";
+             text.style.color = 'rgb(1, 146, 1)';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'rgb(1, 146, 1)';
+         }else if(showIcon.className === randomClasses[2] && computerShowIcon.className === randomClasses[0]){
+             cScore.innerHTML = computerScore;
+             computerScore++;
+             text.innerHTML = "You Loosed ! ";
+             text.style.color = 'red';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'red';
+         }else if(showIcon.className === randomClasses[2] && computerShowIcon.className === randomClasses[1]){
+             pScore.innerHTML = playerScore;
+             playerScore++;
+             text.innerHTML = "It's a Win ! ";
+             text.style.color = 'rgb(1, 146, 1)';
+             text2.innerHTML = text.innerHTML;
+             text2.style.color = 'rgb(1, 146, 1)';
+         }
+      });
+  });
+}
+// Calling the function.
+game();
+// This function contains all the game logic.
+    </script>
+
+
+</body>
+</html>
